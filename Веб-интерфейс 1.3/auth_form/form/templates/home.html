@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+    <title>tegels</title>
+    <style>
+        .container {
+            perspective: 1000px; /* Enable 3D perspective */
+        }
+
+        .main {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide the back face */
+            transition: transform 0.6s; /* Transition for flipping */
+        }
+
+        .main.active {
+            transform: rotateY(0deg); /* Show the front face */
+        }
+
+        .main.hidden {
+            transform: rotateY(90deg); /* Hide the front face */
+        }
+
+        .header, .footer {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__logo"><img src="{% static 'img/logi.svg' %}" alt=""></div>
+            <div class="header__name">TEGELS</div>
+            <div class="header__login"><a href=""><img src="{% static 'img/login.svg' %}" alt=""></a></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="main active" id="main1">
+            <div class="main__wrap">
+                <div class="main__block">
+                    <div class="main__name">Скан сети на открытые порты</div>
+                    <div class="main__logo"><img src="{% static 'img/logo_for_utily.svg' %}" alt=""></div>
+                    <div class="main__use"><a href="{% url 'scan' %}">UsE</a></div>
+                    <div class="main__arr1" onclick="navigate('prev')"><img src="{% static 'img/arrow1.svg' %}" alt=""></div>
+                    <div class="main__arr2" onclick="navigate('next')"><img src="{% static 'img/arrow2.svg' %}" alt=""></div>
+                </div>
+                <div class="main__opisanie">санирует сеть На открытые порты и основные уязвимости</div>
+            </div>
+        </section>
+
+        <section class="main hidden" id="main2">
+            <div class="main__wrap">
+                <div class="main__block">
+                    <div class="main__name" style="font-size: 32px;">Анализ логов, чтобы отправлять подозрительные действия на почту и телеграмм.</div>
+                    <div class="main__logo"><img src="{% static 'img/logo_for_utily.svg' %}" alt=""></div>
+                    <div class="main__use"><a href="{% url 'anallog' %}">UsE</a></div>
+                    <div class="main__arr1" onclick="navigate('prev')"><img src="{% static 'img/arrow1.svg' %}" alt=""></div>
+                    <div class="main__arr2" onclick="navigate('next')"><img src="{% static 'img/arrow2.svg' %}" alt=""></div>
+                </div>
+                <div class="main__opisanie">Система на Python, созданная для анализа логов системы и выявления подозрительных активностей. Данные подозрительные события отправляются на почту и телеграмм.</div>
+            </div>
+        </section>
+
+        <section class="main hidden" id="main3">
+            <div class="main__wrap">
+                <div class="main__block">
+                    <div class="main__name" style="font-size: 30px;">Python-скрипт для автоматического анализа веб-страниц и извлечения метаданных</div>
+                    <div class="main__logo"><img src="{% static 'img/logo_for_utily.svg' %}" alt=""></div>
+                    <div class="main__use"><a href="{% url 'webpdf' %}">UsE</a></div>
+                    <div class="main__arr1" onclick="navigate('prev')"><img src="{% static 'img/arrow1.svg' %}" alt=""></div>
+                    <div class="main__arr2" onclick="navigate('next')"><img src="{% static 'img/arrow2.svg' %}" alt=""></div>
+                </div>
+                <div class="main__opisanie">Анализирует любую веб-страницу, скачивает найденные PDF файлы и изображения, сохраняет в отдельную папку и выдаёт метаданные</div>
+            </div>
+        </section>
+
+        <section class="main hidden" id="main4">
+            <div class="main__wrap">
+                <div class="main__block">
+                    <div class="main__name" style="font-size: 44px;">мониторит логи в режиме реального времени</div>
+                    <div class="main__logo"><img src="{% static 'img/logo_for_utily.svg' %}" alt=""></div>
+                    <div class="main__use"><a href="{% url 'monlog' %}">UsE</a></div>
+                    <div class="main__arr1" onclick="navigate('prev')"><img src="{% static 'img/arrow1.svg' %}" alt=""></div>
+                    <div class="main__arr2" onclick="navigate('next')"><img src="{% static 'img/arrow2.svg' %}" alt=""></div>
+                </div>
+                <div class="main__opisanie">прогрмма написаная на Python для мониторинга логов в режиме реального времени сначао вставте в файл с сгенериованными логами а пото те которые надо  мониторить</div>
+            </div>
+        </section>
+
+        <section class="main hidden" id="main5">
+            <div class="main__wrap">
+                <div class="main__block">
+                    <div class="main__name">Анализ логов на белый и черный список</div>
+                    <div class="main__logo"><img src="{% static 'img/logo_for_utily.svg' %}" alt=""></div>
+                    <div class="main__use"><a href="./utili.html">UsE</a></div>
+                    <div class="main__arr1" onclick="navigate('prev')"><img src="{% static 'img/arrow1.svg' %}" alt=""></div>
+                    <div class="main__arr2" onclick="navigate('next')"><img src="{% static 'img/arrow2.svg' %}" alt=""></div>
+                </div>
+                <div class="main__opisanie">Скрипт написанный на Python который анализирует логи в котором записанны айпи, также есть разделение на белый список и черный, и можно регулировать максимальный порог запросов и длину</div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__tel">telegram</div>
+        <div class="footer__social">@Yagaamiit</div>
+    </footer>
+
+    <script>
+        let sections = document.querySelectorAll('.main');
+        let currentSection = 0;
+
+        function navigate(direction) {
+            sections[currentSection].classList.add('hidden');
+            sections[currentSection].classList.remove('active');
+
+            if (direction === 'next') {
+                currentSection = (currentSection + 1) % sections.length;
+            } else {
+                currentSection = (currentSection - 1 + sections.length) % sections.length;
+            }
+
+            sections[currentSection].classList.add('active');
+            sections[currentSection].classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

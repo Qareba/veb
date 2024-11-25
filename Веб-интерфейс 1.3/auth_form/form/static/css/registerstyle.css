@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Jersey10;
+  src: url('/static/fonts/Jersey10-Regular.ttf');
+  font-weight: 400;
+}
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C9C4C4;
+}
+
+.main__titile {
+  font-family: Jersey10;
+  font-size: 96px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 247px;
+}
+.main__ix {
+  position: absolute;
+  left: 60%;
+  top: 24%;
+}
+@media (max-width: 390px) {
+  .main__ix {
+    left: 81%;
+    top: 31%;
+  }
+}
+.main input {
+  display: block; 
+  margin-top: 15px;
+  background-color: #D9D9D9;
+  width: 197px;
+  height: 27px;
+  text-align: center;
+  border-radius: 20px;
+  color: black;
+}
+.main form {
+  position: absolute;
+  right: 30%;
+}
+@media (max-width: 390px) {
+  .main form {
+    right: 25%;
+  }
+}
+@media (max-width: 1366px) {
+  .main form {
+    right: 43%;
+  }
+}
+.main button {
+  margin-top: 66px;
+  background-color: #D9D9D9;
+  width: 142px;
+  height: 32px;
+  border-radius: 20px;
+  margin-left: 22px;
+}
+@media (max-width: 390px) {
+  .main button {
+    margin-left: 27px;
+  }
+}
+.main a {
+  text-decoration: none;
+  color: black;
+}
+.main__have {
+  position: absolute;
+  margin-left: 837px;
+  margin-top: 415px;
+}
+@media (max-width: 390px) {
+  .main__have {
+    margin-left: 88px;
+  }
+}
+@media (max-width: 1366px) {
+  .main__have {
+    margin-left: 574px;
+  }
+}/*# sourceMappingURL=reg.css.map */
+
+#id_username{
+  padding:5px 10px;
+  border: none;
+  border-radius:10px;
+  text-align:start;
+}
+#id_username:focus{
+outline:0;
+}

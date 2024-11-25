@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/scanstyle.css' %}">
+    <title>utily</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__logo"><img src="{% static 'img/logi.svg' %}" alt=""></div>
+            <div class="header__name">PoliG</div>
+            <div class="header__login"><a href=""><img src="{% static 'img/login.svg' %}" alt=""></a></div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main__name" style="font-size: 40px;">утилита мониторит логи в режиме реального времени</div>
+        <div class="main__opisanie">прогрмма написаная на Python для мониторинга логов в режиме реального времени сначао вставте в файл с сгенериованными логами а пото те которые надо  мониторить</div>
+
+        <form action="" class="main__form" method="post">
+            <input id="main__name1" type="file" name="name1" placeholder="начальный ip" style="border-radius: 0px;"/>
+            <input id="main__name2" type="file" name="name2" placeholder = "конечный ip" style="border-radius: 0px;"/>
+            <input id="main__name3" type="email" name="name3" placeholder="email"/>
+            <input id="main__name4" type="text" name="name4" placeholder = "tg id"/>
+            <button type="submit">USE</button>
+        </form>
+    </section>
+</body>
+</html>

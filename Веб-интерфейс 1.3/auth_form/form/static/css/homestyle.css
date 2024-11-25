@@ -1,0 +1,273 @@
+@font-face {
+  font-family: Jersey10;
+  src: url('/static/fonts/Jersey10-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: ru_Retro;
+  src: url('/static/fonts/ofont.ru_Retro\ Gaming.ttf');
+  font-weight: 400;
+}
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/static/img/bcg.png') no-repeat center/cover;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 2000px;
+  width: 1500px;
+  max-width: 1920px;
+}
+@media (max-width: 390px) {
+  body {
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 1366px) {
+  body {
+    overflow-y: hidden;
+    height: 1000px;
+  }
+}
+
+
+.header {
+  height: 138px;
+}
+.header__wrap {
+  display: flex;
+}
+.header__name {
+  font-family: Jersey10;
+  font-size: 96px;
+  color: #fff;
+  margin-left: 15px;
+}
+@media (max-width: 390px) {
+  .header__name {
+    font-size: 64px;
+    margin-top: 14px;
+  }
+}
+.header__logo {
+  margin-top: 21px;
+  margin-left: 50px;
+}
+@media (max-width: 390px) {
+  .header__logo {
+    margin-left: -9px;
+  }
+}
+.header__login {
+  margin-top: 21px;
+  margin-left: 1339px;
+}
+@media (max-width: 390px) {
+  .header__login {
+    margin-top: 9px;
+    margin-left: 58px;
+  }
+}
+@media (max-width: 1366px) {
+  .header__login {
+    margin-top: 9px;
+    margin-left: 868px;
+  }
+}
+
+.main__wrap {
+  display: flex;
+}
+.main__block {
+  display: block;
+}
+.main__name {
+  display: block;
+  font-family: ru_Retro;
+  font-size: 45px;
+  background-color: #FFFFFF;
+  opacity: 40%;
+  width: 720px;
+  height: 145px;
+  border-radius: 39px;
+  text-align: center;
+  margin-left: 130px;
+  margin-top: 30px;
+}
+@media (max-width: 390px) {
+  .main__name {
+    font-size: 37px;
+    width: 392px;
+    margin-left: -3px;
+  }
+}
+.main__logo {
+  display: block;
+  margin-left: 335px;
+  margin-top: 64px;
+}
+@media (max-width: 390px) {
+  .main__logo {
+    display: none;
+  }
+}
+@media (max-width: 1366px) {
+  .main__logo {
+    width: 383px;
+    height: 112px;
+    margin-top: 11px;
+  }
+}
+.main__use {
+  display: block;
+  font-family: Jersey10;
+  font-size: 128px;
+  background-color: #fff;
+  opacity: 40%;
+  width: 407px;
+  height: 141px;
+  border-radius: 39px;
+  text-align: center;
+  margin-left: 287px;
+  margin-top: 39px;
+}
+@media (max-width: 390px) {
+  .main__use {
+    width: 373px;
+    margin-left: 10px;
+    height: 74px;
+    font-size: 64px;
+    margin-top: 328px;
+  }
+}
+@media (max-width: 1366px) {
+  .main__use {
+    height: 123px;
+    margin-top: 200px;
+  }
+}
+.main__opisanie {
+  font-family: ru_Retro;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #fff;
+  opacity: 40%;
+  border-radius: 39px;
+  width: 490px;
+  height: 375px;
+  text-align: center;
+  margin-left: 302px;
+  margin-top: 171px;
+}
+@media (max-width: 390px) {
+  .main__opisanie {
+    position: absolute;
+    margin-top: 191px;
+    height: 254px;
+    font-size: 19px;
+    margin-left: 51px;
+    width: 292px;
+  }
+}
+@media (max-width: 1366px) {
+  .main__opisanie {
+    width: 395px;
+    margin-left: 43px;
+  }
+}
+.main a {
+  text-decoration: none;
+  color: black;
+}
+.main__arr1 {
+  margin-top: -330px;
+  position: absolute;
+}
+@media (max-width: 390px) {
+  .main__arr1 {
+    margin-top: -286px;
+  }
+}
+@media (max-width: 390px) {
+  .main__arr1 img {
+    width: 44px;
+  }
+}
+.main__arr2 {
+  left: 123%;
+  position: absolute;
+  margin-left: -68px;
+  margin-top: -330px;
+}
+@media (max-width: 390px) {
+  .main__arr2 {
+    margin-top: -286px;
+    margin-left: -44px;
+  }
+}
+@media (max-width: 390px) {
+  .main__arr2 img {
+    width: 44px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .main__arr2 {
+  left: 121%;
+  }
+}
+
+.footer {
+  font-family: Jersey10;
+  background-color: #fff;
+  opacity: 40%;
+  border-radius: 39px;
+  width: 100%;
+  height: 97px;
+  position: absolute;
+  margin-top: 759px;
+}
+.footer__tel {
+  font-size: 48px;
+  margin-left: 53px;
+}
+@media (max-width: 390px) {
+  .footer__tel {
+    font-size: 41px;
+  }
+}
+.footer__social {
+  font-size: 40px;
+  margin-left: 53px;
+}
+
+#main2 .main__name {
+  font-size: 32px;
+}
+@media (max-width: 390px) {
+  #main2 .main__name {
+    font-size: 22px;
+  }
+}
+
+#main3 .main__name {
+  font-size: 30px;
+}
+@media (max-width: 390px) {
+  #main3 .main__name {
+    font-size: 22px;
+  }
+}
+
+#main4 .main__name {
+  font-size: 44px;
+}
+@media (max-width: 390px) {
+  #main4 .main__name {
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=main.css.map */

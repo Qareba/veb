@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        <div class="main__titile">TEGELS</div>
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit" class="main__conf">confirm</button>
+        </form>
+        <a href="{% url 'password_reset' %}" class="main__forgot">Forgot your password?</a>
+        <a href="/register" class="main__new">Don't have an account yet? Register now</a>
+    </section>
+</body>
+</html>

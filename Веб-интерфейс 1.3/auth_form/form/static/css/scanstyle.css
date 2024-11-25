@@ -1,0 +1,106 @@
+@font-face {
+  font-family: Jersey10;
+  src: url('/static/fonts/Jersey10-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: ru_Retro;
+  src: url('/static/fonts/ofont.ru_Retro\ Gaming.ttf');
+  font-weight: 400;
+}
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/static/img/bcg.png') no-repeat center/cover;
+  overflow-y: hidden;
+  height: 1000px;
+}
+
+.header {
+  height: 138px;
+}
+.header__wrap {
+  display: flex;
+}
+.header__name {
+  font-family: Jersey10;
+  font-size: 96px;
+  color: #fff;
+  margin-left: 15px;
+}
+.header__logo {
+  margin-top: 21px;
+  margin-left: 50px;
+}
+.header__login {
+  margin-top: 21px;
+  margin-left: 1436px;
+}
+
+.main__wrap {
+  display: flex;
+}
+.main__name {
+  display: block;
+  font-family: ru_Retro;
+  font-size: 48px;
+  background-color: #FFFFFF;
+  opacity: 40%;
+  width: 720px;
+  height: 145px;
+  border-radius: 39px;
+  text-align: center;
+  margin-left: 565px;
+  margin-top: -74px;
+}
+.main__opisanie {
+  display: flex;
+  font-family: ru_Retro;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #fff;
+  opacity: 40%;
+  border-radius: 39px;
+  width: 490px;
+  height: 375px;
+  text-align: center;
+  margin-left: 302px;
+  margin-top: 171px;
+}
+.main a {
+  text-decoration: none;
+  color: black;
+}
+.main input {
+  color: black;
+  opacity: 40%;
+  width: 316px;
+  height: 164px;
+  border-radius: 40px;
+  font-size: 40px;
+  margin-left: 139px;
+  margin-bottom: 22px;
+}
+.main__form {
+  margin-left: 800px;
+  margin-top: -352px;
+  width: 1000px;
+}
+.main button {
+  font-family: Jersey10;
+  width: 277px;
+  height: 112px;
+  opacity: 40%;
+  border-radius: 40px;
+  font-size: 44px;
+}
+.main input::-moz-placeholder {
+  text-align: center;
+}
+.main input::placeholder {
+  text-align: center;
+}/*# sourceMappingURL=scan.css.map */

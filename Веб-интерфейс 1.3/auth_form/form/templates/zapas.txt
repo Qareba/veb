@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/password_reset_complete.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        <div class="main__titile">TEGELS</div>
+        <div class="main__text">the password has been successfully changed!</div>
+        <button type="submit" class="main__conf">continue</button>
+    </section>
+</body>
+</html>

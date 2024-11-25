@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Jersey10;
+  src: url('/static/fonts/Jersey10-Regular.ttf');
+  font-weight: 400;
+}
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C9C4C4;
+}
+
+.main__titile {
+  font-family: Jersey10;
+  font-size: 96px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 247px;
+}
+.main__ix {
+  position: absolute;
+  left: 60%;
+  top: 24%;
+}
+@media (max-width: 390px) {
+  .main__ix {
+    left: 81%;
+    top: 31%;
+  }
+}
+@media (max-width: 1366px) {
+  .main__ix {
+    top: 30%;
+  }
+}
+.main input {
+  display: block;
+  margin-top: 10px;
+  background-color: #D9D9D9;
+  width: 197px;
+  height: 27px;
+  text-align: center;
+  border-radius: 20px;
+  color: black;
+}
+.main form {
+  position: absolute;
+  right: 45%;
+}
+@media (max-width: 390px) {
+  .main form {
+    right: 25%;
+  }
+}
+@media (max-width: 1366px) {
+  .main form {
+    right: 43%;
+  }
+}
+@media (max-width: 1920px) {
+  .main form {
+    right: 45%;
+  }
+}
+.main__conf {
+  position: absolute;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 90px;
+  color: black;
+  background-color: #D9D9D9;
+  width: 142px;
+  height: 32px;
+  border-radius: 20px;
+  margin-left: 22px;
+  font-weight: 900;
+}
+.main__forgot {
+  position: absolute;
+  margin-top: 115px;
+  margin-left: 956px;
+}
+@media (max-width: 390px) {
+  .main__forgot {
+    margin-left: 117px;
+  }
+}
+@media (max-width: 1366px) {
+  .main__forgot {
+    margin-left: 602px;
+  }
+}
+@media (max-width: 1920px) {
+  .main__forgot {
+    margin-left: 855px;
+  }
+}
+.main a {
+  text-decoration: none;
+  color: black;
+}
+.main__new {
+  position: absolute;
+  margin-left: 915px;
+  margin-top: 173px;
+}
+@media (max-width: 390px) {
+  .main__new {
+    margin-left: 63px;
+  }
+}
+@media (max-width: 1366px) {
+  .main__new {
+    margin-left: 545px;
+  }
+}
+@media (max-width: 1920px) {
+  .main__new {
+    margin-left: 798px;
+  }
+}
+ul{
+  display: none;
+}
+
+
+/*# sourceMappingURL=login.css.map */
